@@ -6,73 +6,139 @@
 <title>GREENORA - CBD Premium</title>
 
 <style>
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #0b0b0b;
   color: white;
+}
+
+/* HERO */
+.hero {
+  padding: 60px 20px;
   text-align: center;
 }
 
-.container {
-  max-width: 420px;
-  margin: auto;
-  padding: 20px;
+.hero h1 {
+  font-size: 36px;
+  letter-spacing: 4px;
 }
 
-h1 {
-  font-size: 30px;
-  letter-spacing: 3px;
-}
-
-.subtitle {
+.hero p {
   opacity: 0.7;
   margin-bottom: 20px;
 }
+  <img src="logo.png" width="100">
 
 .btn {
-  display: block;
+  display: inline-block;
   background: #22c55e;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 12px;
+  padding: 15px 25px;
+  border-radius: 10px;
   color: white;
   text-decoration: none;
   font-weight: bold;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  gap: 15px;
 }
 
 .product {
   background: #111;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* AVANTAGES */
+.features div {
   margin: 10px 0;
 }
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="container">
-
-<h1>GREENORA</h1>
-<p class="subtitle">CBD Premium 🌿 Livraison France 🇫🇷</p>
-
-<a href="#" class="btn">🛒 Acheter maintenant</a>
-<a href="#" class="btn">🔥 Promotions</a>
-<a href="#" class="btn">🌿 Nos produits</a>
-<a href="https://wa.me/33TONNUMERO" class="btn">💬 WhatsApp</a>
-<a href="#" class="btn">📷 Instagram</a>
-
-<div class="product">
-<h3>Fleur CBD Amnesia</h3>
-<p>Qualité premium – THC < 0,3%</p>
+<!-- HERO -->
+<div class="hero">
+  <h1>GREENORA</h1>
+  <p>CBD Premium 🌿 Livraison rapide en France 🇫🇷</p>
+  
+  <a href="#" class="btn">🛒 Acheter maintenant</a>
+  <a href="https://wa.me/33605549511" class="btn">💬 WhatsApp</a>
 </div>
 
-<div class="product">
-<h3>Huile CBD 10%</h3>
-<p>Détente & bien-être</p>
+<!-- PRODUITS -->
+<div class="section">
+  <h2>Nos produits</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <h3>Fleur CBD Amnesia</h3>
+      <p>Arômes puissants – THC < 0,3%</p>
+    </div>
+
+    <div class="product">
+      <h3>Huile CBD 10%</h3>
+      <p>Détente & relaxation</p>
+    </div>
+
+    <div class="product">
+      <h3>Résine Afghan</h3>
+      <p>Qualité premium</p>
+    </div>
+
+  </div>
 </div>
 
+<!-- AVANTAGES -->
+<div class="section features">
+  <h2>Pourquoi choisir GREENORA ?</h2>
+
+  <div>🌿 Qualité premium</div>
+  <div>🚚 Livraison rapide</div>
+  <div>🔒 Paiement sécurisé</div>
+  <div>🇫🇷 Conforme à la loi</div>
+</div>
+
+<!-- CTA -->
+<div class="section">
+  <h2>Rejoins l’expérience GREENORA</h2>
+  <a href="#" class="btn">Découvrir la boutique</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 GREENORA – CBD légal en France
+</div>
+
+  <div class="section">
+<h2>Avis clients ⭐⭐⭐⭐⭐</h2>
+<p>"Incroyable qualité !" – Client</p>
 </div>
 
 </body>
