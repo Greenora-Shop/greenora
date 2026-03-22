@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<title>Boutique</title>
+<script src="script.js"></script>
 </head>
 
 <body>
@@ -11,7 +11,7 @@
   <h2>GREENORA</h2>
   <div>
     <a href="index.html">Accueil</a>
-    <a href="shop.html">Boutique</a>
+    <a href="cart.html">Panier</a>
   </div>
 </header>
 
@@ -20,26 +20,50 @@
 
 <div class="products">
 
-<div class="product">
-<img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2">
-<h3>Fleur Amnesia</h3>
-<p>19.90€</p>
-<a href="product.html" class="btn">Voir</a>
-</div>
+<script>
+let products = [
+["Amnesia CBD",19.9,"https://images.unsplash.com/photo-1607619056574"],
+["OG Kush CBD",22.9,"https://images.unsplash.com/photo-1585238342028"],
+["Gelato CBD",24.9,"https://images.unsplash.com/photo-1615485290382"],
+["Strawberry CBD",21.9,"https://images.unsplash.com/photo-1590080876272"],
+["Lemon Haze",23.9,"https://images.unsplash.com/photo-1604908554007"],
 
-<div class="product">
-<img src="https://images.unsplash.com/photo-1585238342028-78d387f4a707">
-<h3>Huile CBD</h3>
-<p>39.90€</p>
-<a href="product.html" class="btn">Voir</a>
-</div>
+["Huile 5%",29.9,"https://images.unsplash.com/photo-1580281658629"],
+["Huile 10%",39.9,"https://images.unsplash.com/photo-1598300053653"],
+["Huile 20%",59.9,"https://images.unsplash.com/photo-1607619056574"],
 
+["Résine Afghan",29.9,"https://images.unsplash.com/photo-1615485290382"],
+["Hash Marocain",27.9,"https://images.unsplash.com/photo-1604908554007"],
+
+["Gummies CBD",19.9,"https://images.unsplash.com/photo-1580281658629"],
+["Bonbons Relax",17.9,"https://images.unsplash.com/photo-1598300053653"],
+
+["Crème CBD",24.9,"https://images.unsplash.com/photo-1607619056574"],
+["Baume CBD",21.9,"https://images.unsplash.com/photo-1585238342028"],
+
+["Pack Relax",49.9,"https://images.unsplash.com/photo-1615485290382"],
+["Pack Premium",79.9,"https://images.unsplash.com/photo-1590080876272"],
+
+["Vape CBD",34.9,"https://images.unsplash.com/photo-1604908554007"],
+["E-liquide CBD",19.9,"https://images.unsplash.com/photo-1580281658629"],
+
+["Infusion CBD",14.9,"https://images.unsplash.com/photo-1598300053653"],
+["Thé CBD",12.9,"https://images.unsplash.com/photo-1607619056574"]
+];
+
+products.forEach(p => {
+document.write(`
 <div class="product">
-<img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5">
-<h3>Résine CBD</h3>
-<p>29.90€</p>
-<a href="product.html" class="btn">Voir</a>
+<img src="${p[2]}">
+<h3>${p[0]}</h3>
+<p>${p[1]}€</p>
+<button class="btn" onclick="addToCart('${p[0]}',${p[1]})">
+Ajouter au panier
+</button>
 </div>
+`);
+});
+</script>
 
 </div>
 </div>
