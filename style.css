@@ -23,19 +23,9 @@ header a {
   text-align: center;
 }
 
-.btn {
-  background: #22c55e;
-  padding: 12px 20px;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px;
-}
-
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
   gap: 15px;
 }
 
@@ -48,4 +38,14 @@ header a {
 .product img {
   width: 100%;
   border-radius: 10px;
+}
+
+.btn {
+  background: #22c55e;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
 }
