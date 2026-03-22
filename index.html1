@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>GREENORA</title>
+</head>
+
+<body>
+
+<header>
+  <h2>GREENORA</h2>
+  <div>
+    <a href="index.html">Accueil</a>
+    <a href="shop.html">Boutique</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<div class="container">
+  <h1>CBD Premium 🌿</h1>
+  <p>Produits de qualité – Livraison en France 🇫🇷</p>
+
+  <a href="shop.html" class="btn">🛒 Voir la boutique</a>
+</div>
+
+</body>
+</html>
